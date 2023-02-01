@@ -2,8 +2,6 @@
 
 This repository demonstrates how to use data schemas to generalize your machine learning algorithm implementation. By using data schemas, you can avoid hard-coding your implementation to a specific dataset, which can make it easier to apply your algorithms to new datasets in the future.
 
-We use the binary classification problem for the repo. The example schema file is created as per Ready Tensor specifications for the Binary Classification problem category.
-
 ## Repository Contents
 
 The `app/` folder in the repository contains the following:
@@ -14,7 +12,7 @@ The `app/` folder in the repository contains the following:
 
 ## Example Schema File
 
-An example schema file called `employee_attrition_schema.json` is included in the `inputs` folder of this repository. This file serves as an example of the format that a data schema can follow and provides a basis for users to create their own schema files for their own datasets.
+An example schema file called `employee_attrition_schema.json` is included in the `inputs` folder of this repository. The schema is created as per Ready Tensor specifications for the Binary Classification problem category. This file serves as an example of the format that a data schema can follow and provides a basis for users to create their own schema files for their own datasets.
 
 ## Usage
 
