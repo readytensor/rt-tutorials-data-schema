@@ -2,12 +2,15 @@
 import json
 
 
-class BinaryClassificationSchemaReader:
-    """Class for reading binary classification schema file"""
+class BinaryClassificationSchema:
+    """
+    Class for loading binary classification schema file and providing methods to access
+    fields defined in the schema
+    """
 
     def __init__(self, schema_fpath: str) -> None:
         """
-        Initializes a new instance of the `BinaryClassificationSchemaReader` class.
+        Initializes a new instance of the `BinaryClassificationSchema` class.
 
         :param schema_fpath: path to the binary classification schema file
         """
