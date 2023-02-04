@@ -15,10 +15,10 @@ class BinaryClassificationSchema:
         :param schema_fpath: path to the binary classification schema file
         """
         self.schema = json.load(open(schema_fpath))
-        self._numeric_features = self._get_features("NUMERIC", "INT", "REAL")
-        self._categorical_features = self._get_features("CATEGORICAL")
+        self._numeric_features = self._get_features_of_type("NUMERIC", "INT", "REAL")
+        self._categorical_features = self._get_features_of_type("CATEGORICAL")
 
-    def _get_features(self, *types):
+    def _get_features_of_type(self, *types):
         """
         Returns the feature names of the specified data type.
 
