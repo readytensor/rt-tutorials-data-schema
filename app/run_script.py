@@ -7,15 +7,15 @@ def read_schema():
     schema_fpath = "./inputs/titanic_schema.json"
 
     # instantiate schema provider which loads the json file schema
-    bc_schema = BinaryClassificationSchema(schema_fpath)
+    data_schema = BinaryClassificationSchema(schema_fpath)
 
     # check if schema provider parsed the schema correctly
-    print(f"id_field is: `{bc_schema.id_field}`")
-    print(f"target_field is: `{bc_schema.target_field}`")
-    print(f"target_class is: `{bc_schema.target_class}`")
-    print(f"Numerical features are: {bc_schema.numeric_features}")
-    print(f"Categorical features are: {bc_schema.categorical_features}")
-    print(f"All fields are: {bc_schema.all_fields}")
+    print(f"id_field is: `{data_schema.id_field}`")
+    print(f"target_field is: `{data_schema.target_field}`")
+    print(f"target_class is: `{data_schema.target_class}`")
+    print(f"Numerical features are: {data_schema.numeric_features}")
+    print(f"Categorical features are: {data_schema.categorical_features}")
+    print(f"All fields are: {data_schema.all_fields}")
 
 
 if __name__ == "__main__":
