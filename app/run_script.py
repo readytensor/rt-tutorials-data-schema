@@ -1,4 +1,6 @@
-from schema_provider import BinaryClassificationSchema
+
+from data_management.schema_provider import BinaryClassificationSchema
+import paths
 
 def read_schema():
     """Reads the binary classification schema."""
@@ -7,7 +9,7 @@ def read_schema():
     schema_fpath = "./inputs/titanic_schema.json"
 
     # instantiate schema provider which loads the json file schema
-    data_schema = BinaryClassificationSchema(schema_fpath)
+    data_schema = BinaryClassificationSchema(paths.SCHEMA_FPATH)
 
     # check if schema provider parsed the schema correctly
     print(f"id_field is: `{data_schema.id_field}`")
