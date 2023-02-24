@@ -6,13 +6,14 @@ This repository demonstrates how to use data schemas to generalize your machine 
 
 The `app/` folder in the repository contains the following:
 
-- `inputs/`: a folder containing an example schema file called `employee_attrition_schema.json`.
-- `schema_reader.py`: a module containing the **BinaryClassificationSchemaReader** class, which can be used to parse a data schema and extract relevant information from it.
+- `inputs/`: a folder containing an example schema file called `titanic_schema.json`.
+- `data_management/` contains a script called `schema_provider.py` which has the **BinaryClassificationSchemaReader** class. This class can be used to parse a data schema and extract relevant information from it.
+- `paths.py`: script contains variables which represent various paths to be used in the repository.
 - `run_script.py`: an example script that uses the **BinaryClassificationSchemaReader** class to parse an example schema file and print out information about the fields and features in the schema.
 
 ## Example Schema File
 
-An example schema file called `employee_attrition_schema.json` is included in the `inputs` folder of this repository. The schema is created as per Ready Tensor specifications for the Binary Classification problem category. This file serves as an example of the format that a data schema can follow and provides a basis for users to create their own schema files for their own datasets.
+An example schema file called `titanic_schema.json` is included in the `inputs` folder of this repository. The schema is created as per Ready Tensor specifications for the Binary Classification problem category. This file serves as an example of the format that a data schema can follow and provides a basis for users to create their own schema files for their own datasets.
 
 ## Usage
 
@@ -31,21 +32,8 @@ To use the **BinaryClassificationSchemaReader** class, instantiate it by passing
 For more details, see the code and the provided example in the `read_schema` function in `run_script.py` file. To run the code, simply update the path of the schema file in read_schema function and run the script.
 
 ```bash
-python app/schema_reader.py
+python app/run_script.py
+
 ```
 
 The function will print the contents of the schema file, including the `id_field`, `target_field`, `target_class`, `numeric_features`, `categorical_features`, and `all_fields`.
-
-## Requirements
-
-The code requires Python 3 and the following libraries:
-
-```makefile
-json==2.0.9
-```
-
-These packages can be installed by running the following command:
-
-```python
-pip install -r requirements.txt
-```
