@@ -5,9 +5,6 @@ import paths
 def read_schema():
     """Reads the binary classification schema."""
 
-    # path to the schema file
-    schema_fpath = "./inputs/titanic_schema.json"
-
     # instantiate schema provider which loads the json file schema
     data_schema = BinaryClassificationSchema(paths.SCHEMA_FPATH)
 

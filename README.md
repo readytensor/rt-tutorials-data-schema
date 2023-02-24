@@ -29,11 +29,11 @@ To use the **BinaryClassificationSchemaReader** class, instantiate it by passing
 - `features`: the list of all features in the data
 - `all_fields`: the list of all fields in the data, including the ID and target fields
 
-For more details, see the code and the provided example in the `read_schema` function in `run_script.py` file. To run the code, simply update the path of the schema file in read_schema function and run the script.
+For more details, see the code and the provided example in the `read_schema` function in `run_script.py` file. To run the code, simply run the script as follows.
 
 ```bash
 python app/run_script.py
 
 ```
 
-The function will print the contents of the schema file, including the `id_field`, `target_field`, `target_class`, `numeric_features`, `categorical_features`, and `all_fields`.
+The function prints the contents of the schema file, including the `id_field`, `target_field`, `target_class`, `numeric_features`, `categorical_features`, and `all_fields`.
