@@ -7,7 +7,7 @@ import paths
 def read_schema():
     """Reads the binary classification schema."""
 
-    # instantiate schema provider which loads the json file schema
+    # loads the json file schema into a dictionary and use it to instantiate the schema provider
     schema_dict = read_json_in_directory(paths.SCHEMA_DIR)
     data_schema = BinaryClassificationSchema(schema_dict)
 
