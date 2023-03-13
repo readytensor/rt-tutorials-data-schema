@@ -7,13 +7,13 @@ This repository demonstrates how to use data schemas to generalize your machine 
 The `app/` folder in the repository contains the following:
 
 - `inputs/`: a folder containing an example schema file called `titanic_schema.json`.
-- `data_management/` contains a script called `schema_provider.py` which has the **BinaryClassificationSchemaReader** class. This class can be used to parse a data schema and extract relevant information from it.
+- `data_management/` contains a script called `schema_provider.py` which has the **BinaryClassificationSchemaReader** class. This class can be used to parse a data schema and extract relevant information from it. Directory also contains a script called `data_utils.py` which contains a function to read a json file with any name from a given directory.
 - `paths.py`: script contains variables which represent various paths to be used in the repository.
 - `run_script.py`: an example script that uses the **BinaryClassificationSchemaReader** class to parse an example schema file and print out information about the fields and features in the schema.
 
 ## Example Schema File
 
-An example schema file called `titanic_schema.json` is included in the `inputs` folder of this repository. The schema is created as per Ready Tensor specifications for the Binary Classification problem category. This file serves as an example of the format that a data schema can follow and provides a basis for users to create their own schema files for their own datasets.
+An example schema file called `titanic_schema.json` is included in the `inputs/data_config` folder of this repository. The schema is created as per Ready Tensor specifications for the Binary Classification problem category. This file serves as an example of the format that a data schema can follow and provides a basis for users to create their own schema files for their own datasets.
 
 ## Usage
 
