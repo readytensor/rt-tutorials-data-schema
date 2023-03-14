@@ -6,7 +6,7 @@ This repository demonstrates how to use data schemas to generalize your machine 
 
 The `app/` folder in the repository contains the following:
 
-- `inputs/`: a folder containing an example schema file called `titanic_schema.json`.
+- `inputs/`: a folder containing sub-folders for schema and training/testing data. An example schema file called `titanic_schema.json` is placed in `inputs/data_config/`.
 - `data_management/` contains a script called `schema_provider.py` which has the **BinaryClassificationSchemaReader** class. This class can be used to parse a data schema and extract relevant information from it. Directory also contains a script called `data_utils.py` which contains a function to read a json file with any name from a given directory.
 - `paths.py`: script contains variables which represent various paths to be used in the repository.
 - `run_script.py`: an example script that uses the **BinaryClassificationSchemaReader** class to parse an example schema file and print out information about the fields and features in the schema.
