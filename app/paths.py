@@ -21,7 +21,7 @@ MODEL_ARTIFACTS_PATH = os.path.join(MODEL_PATH, "artifacts")
 
 # Path to outputs inside ml_vol
 OUTPUT_DIR = os.path.join(CURRENT_DIR, "outputs")
-# Path to errors directory inside model directory
+# Path to logs directory inside model directory
 LOGS_DIR = os.path.join(OUTPUT_DIR, "logs")
 # Path to testing outputs directory inside model directory
 TEST_OUTPUTS_DIR = os.path.join(OUTPUT_DIR, "testing_outputs")
