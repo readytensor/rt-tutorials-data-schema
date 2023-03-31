@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository demonstrates how to use data schemas to generalize your machine learning algorithm implementation. By using data schemas, you can avoid hard-coding your implementation to a specific dataset, which can make it easier to apply your algorithms to new datasets in the future.
+This repository demonstrates how to use data schemas to create your machine learning algorithm implementation. By using data schemas, you can avoid hard-coding your implementation to a specific dataset, which can make it easier to apply your algorithms to new datasets in the future.
 
 ## Repository Contents
 
