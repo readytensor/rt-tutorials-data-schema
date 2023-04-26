@@ -1,15 +1,13 @@
 
-from data_management.schema_provider import BinaryClassificationSchema
-from data_management.data_utils import read_json_in_directory
-import paths
+from utils import load_data_schema
+from config import paths
 
 
 def read_schema():
     """Reads the binary classification schema."""
 
-    # loads the json file schema into a dictionary and use it to instantiate the schema provider
-    schema_dict = read_json_in_directory(paths.SCHEMA_DIR)
-    data_schema = BinaryClassificationSchema(schema_dict)
+    # load the json file schema into a dictionary and use it to instantiate the schema provider
+    data_schema = load_data_schema(paths.SCHEMA_DIR)
 
     # check if schema provider parsed the schema correctly
     print(f"id_field is: `{data_schema.id_field}`")
