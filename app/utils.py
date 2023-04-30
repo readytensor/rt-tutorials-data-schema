@@ -1,10 +1,6 @@
 import os
-import numpy as np
-import pandas as pd
 import json
-import random
-from typing import Union, Dict, Tuple
-from sklearn.model_selection import train_test_split
+from typing import Dict
 
 from data_management.schema_provider import BinaryClassificationSchema
 
