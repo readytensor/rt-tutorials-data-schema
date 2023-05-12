@@ -4,17 +4,16 @@
   "problemCategory": "binary_classification",
   "version": 1.0,
   "inputDataFormat": "CSV",
-  "idField": {
+  "id": {
     "name": "PassengerId",
     "description": "A unique identifier for each passenger in the dataset."
   },
-  "targetField": {
+  "target": {
     "name": "Survived",
     "description": "A binary variable indicating whether or not the passenger survived (0 = No, 1 = Yes).",
-    "allowedValues": ["1", "0"],
-    "positiveClass": "1"
+    "allowedValues": ["0", "1"]
   },
-  "predictorFields": [
+  "predictors": [
     {
       "name": "Pclass",
       "description": "A categorical variable indicating the passenger class (1 = 1st, 2 = 2nd, 3 = 3rd).",
