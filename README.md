@@ -7,6 +7,10 @@ This repository is part of a comprehensive tutorial series aimed at building ada
 ## Project Structure
 
 ```bash
+├── examples/
+│   ├── titanic_schema.json
+│   ├── titanic_train.csv
+│   └── titanic_test.csv
 ├── inputs/
 │   ├── data/
 │   │   ├── testing/
@@ -44,7 +48,7 @@ This repository is part of a comprehensive tutorial series aimed at building ada
 - **`/src`**: This directory holds the source code for the project. It is further divided into various subdirectories such as `config` for configuration files, `data_model` for data models for input validation, `hyperparameter_tuning` for hyperparameter-tuning (HPT) related files, `prediction` for prediction model scripts, `preprocessing` for data preprocessing scripts, `schema` for schema scripts, and `xai` for explainable AI scripts.
   - Check the `src/schema/data_schema.py` file for the data schema implementation.
   - Run the `check_schema.py` file in the `src/` path to see how the data schema is used: `python app/run_script.py`.
-- **`/tests`**: This directory contains all the tests for the project. It mirrors the `src` directory structure for consistency.
+- **`/tests`**: This directory contains all the tests for the project. It mirrors the `src` directory structure for consistency. There is also a `test_resources` folder inside `/tests` which can contain any resources needed for the tests (e.g. sample data files).
 - **`/tmp`**: This directory is used for storing temporary files which are not necessary to commit to the repository.
 - **`.gitignore`**: This file specifies the files and folders that should be ignored by Git.
 - **`LICENSE`**: This file contains the license for the project.
