@@ -11,7 +11,7 @@ def read_schema():
     # check if schema provider parsed the schema correctly
     print(f"id is: `{data_schema.id}`")
     print(f"target is: `{data_schema.target}`")
-    print(f"allowed values for target are: `{data_schema.allowed_target_values}`")
+    print(f"allowed values for target are: `{data_schema.target_classes}`")
     print(f"positive_class is: `{data_schema.positive_class}`")
     print(f"Numerical features are: {data_schema.numeric_features}")
     print(f"Categorical features are: {data_schema.categorical_features}")
