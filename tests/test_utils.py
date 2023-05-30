@@ -1,19 +1,3 @@
-"""
-This module contains unit tests for the `read_json_as_dict` function of the utils.py module.
-
-`read_json_as_dict` is a utility function that reads a JSON file and returns its content as a dictionary.
-It can handle both direct file paths and directories containing a JSON file.
-If the provided path is neither a file nor a directory, the function raises a ValueError.
-
-The tests included in this module verify the correct functionality of `read_json_as_dict` for various
-scenarios, including:
-- When a direct path to a JSON file is provided.
-- When a path to a directory containing a JSON file is provided.
-- When an invalid path is provided.
-- When there is no JSON file in the given directory.
-- When the JSON file is invalid.
-"""
-
 import json
 import os
 import shutil
