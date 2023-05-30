@@ -7,6 +7,7 @@ This repository is part of a comprehensive tutorial series aimed at building ada
 ## Project Structure
 
 ```bash
+binary_class_project/
 ├── examples/
 │   ├── titanic_schema.json
 │   ├── titanic_train.csv
@@ -32,6 +33,7 @@ This repository is part of a comprehensive tutorial series aimed at building ada
 │   │   ├── __init__.py
 │   │   └── data_schema.py
 │   ├── xai/
+│   ├── __init__.py
 │   ├── check_schema.py
 │   └── utils.py
 ├── tests/
