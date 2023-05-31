@@ -47,7 +47,7 @@ binary_class_project/
 ├── LICENSE
 ├── pytest.ini
 ├── README.md
-└── requirements.txt
+├── requirements.txt
 └── requirements-test.txt
 ```
 
